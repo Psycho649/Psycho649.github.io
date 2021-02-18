@@ -69,6 +69,65 @@ body, html {
     <p> And follow my Instagram (<a target="_Blank" href="https://www.instagram.com/yn.psycho/">yn.psycho</a>)</p>
     <p>If you have any questions feel free to contact me on <a href="mailto:blockyart233@gmail.com">Email</a>.</p>
 </div>
+<<<<<<< HEAD
+=======
+
+<div id="News" class="tabcontent">
+  
+  <!-- Place <div> tag where you want the feed to appear -->
+<div id="curator-feed-youtube-layout">
+<h1>Youtube</h1>
+  <p> Check out my YouTube channel. <a target="_Blank" href="https://rebrand.ly/viewYasogaN">(Yasoga Nanayakkarawasam)</a> <br> PS: <a target="_blank" href="https://rebrand.ly/subscribeYasogaN"> Subscribe </a> ME <br> </p>
+<h3>My Youtube Feed</h3>
+<a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+<script type="text/javascript">
+/* curator-feed-youtube-layout */
+(function(){
+var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+i.src = "https://cdn.curator.io/published/f39fc1cf-27d7-437a-8705-c3c43da05094.js";
+e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+})();
+</script>
+
+
+<div id="curator-feed-default-feed-layout" class="tabcontent">
+<h1> My Instagram feed </h1>
+</div>
+<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+<script type="text/javascript">
+/* curator-feed-default-feed-layout */
+(function(){
+var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+i.src = "https://cdn.curator.io/published/0c9322a5-d3b6-4fdf-b17e-94977075811b.js";
+e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+})();
+</script>
+<div id="About" class="tabcontent" background-color: #FF6>
+  <h1>Contact</h1>
+  <p>If you have any questions feel free to contact me via <a href="mailto:blockyart233@gmail.com">Email</a>. <br> You can also contact via Instagram (yn.psycho) and Reddit (u/Yasogan_6) </p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+>>>>>>> parent of 3607246 (Update index.html)
    
 </body>
 </html> 
