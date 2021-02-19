@@ -11,6 +11,7 @@
 body, html {
   margin: 0;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serifserif;
+
   
 }
 
@@ -19,7 +20,7 @@ body, html {
  
   background-color: #555;
   color: white;
-  float: right;
+  float: left;
   border: none;
   outline: none;
   cursor: pointer;
@@ -34,31 +35,35 @@ body, html {
 }
 
 /* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  height:100%;
+.tabcontent .{
+  
   color: black;
   display: none;
   padding: 100px 20px;
 }
 
+p, h1, h2, h3, h4, h5, {
+	padding-left:px
+	
+}
+
+
 
 #Home {background-color: #3FF;}
-
 #curator-feed-default-feed-layout {background-color: #F9F;}
 #curator-feed-youtube-layout {background-color: #F90;}
 </style>
 </head>
 <body>
-
-<marquee direction="right" align="right">uploads
-<button class="tablink" onclick="openPage(#curator-feed-youtube-layout,this,red)" >YouTube</button>
-<button class="tablink" onclick="openPage(curator-feed-default-feed-layout,this,pink)">Instagram</button>
-<button class="tablink" onclick="openPage(Home,this,blue)" id="defaultOpen">Home</button>
-
+<button class="tablink" onclick="openPage('Home', this, 'blue')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('curator-feed-youtube-layout', this, 'red')" id="defaultOpen">YouTube</button>
+<button class="tablink" onclick="openPage('curator-feed-default-feed-layout', this, 'green')" >Instagram</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" >Flickr</button>
 
 <div id="Home" class="tabcontent">
   
-    <h1> Meet Yasoga </h1>
+    
+    <h1>Meet Yasoga </h1>
     <h2> Who am I? </h2>
     <p> I am 13 years old and this is my personal webpage. I currently study at <a target="_Blank" href="https://www.lyceum.lk"> Lyceum International School, Nugegoda.</a> I also learn coding at <a target="_Blank" href="https://www.khanacademy.org">khan academy</a>. I love playing games, computer programming and watching movies. I also game under the usernames</p>
     <ul> 
@@ -72,10 +77,9 @@ body, html {
     <p>If you have any questions feel free to contact me on <a href="mailto:blockyart233@gmail.com">Email</a>.</p>
 </div>
 
-<div id="News" class="tabcontent">
-  
-  <!-- Place <div> tag where you want the feed to appear -->
-<div id="curator-feed-youtube-layout">
+
+<div id="curator-feed-youtube-layout" class="tabcontent">
+<h1>&nbsp;</h1>
 <h1>Youtube</h1>
   <p> Check out my YouTube channel. <a target="_Blank" href="https://rebrand.ly/viewYasogaN">(Yasoga Nanayakkarawasam)</a> <br> PS: <a target="_blank" href="https://rebrand.ly/subscribeYasogaN"> Subscribe </a> ME <br> </p>
 <h3>My Youtube Feed</h3>
@@ -126,9 +130,6 @@ function openPage(pageName,elmnt,color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-
-
    
 </body>
 </html> 
-
