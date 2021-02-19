@@ -52,13 +52,14 @@ p, h1, h2, h3, h4, h5, {
 #Home {background-color: #3FF;}
 #curator-feed-default-feed-layout {background-color: #F9F;}
 #curator-feed-youtube-layout {background-color: #F90;}
+curator-feed-flickr-layout {background-color: #6F6}
 </style>
 </head>
 <body>
 <button class="tablink" onclick="openPage('Home', this, 'blue')" id="defaultOpen">Home</button>
 <button class="tablink" onclick="openPage('curator-feed-youtube-layout', this, 'red')" id="defaultOpen">YouTube</button>
-<button class="tablink" onclick="openPage('curator-feed-default-feed-layout', this, 'green')" >Instagram</button>
-<button class="tablink" onclick="openPage('News', this, 'green')" >Flickr</button>
+<button class="tablink" onclick="openPage('curator-feed-default-feed-layout', this, 'pink')" >Instagram</button>
+<button class="tablink" onclick="openPage('curator-feed-flickr-layout', this, 'green')" >Flickr</button>
 
 <div id="Home" class="tabcontent">
   
@@ -107,10 +108,21 @@ i.src = "https://cdn.curator.io/published/0c9322a5-d3b6-4fdf-b17e-94977075811b.j
 e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 })();
 </script>
-<div id="About" class="tabcontent" background-color: #FF6>
-  <h1>Contact</h1>
-  <p>If you have any questions feel free to contact me via <a href="mailto:blockyart233@gmail.com">Email</a>. <br> You can also contact via Instagram (yn.psycho) and Reddit (u/Yasogan_6) </p>
-</div>
+
+<!-- Place <div> tag where you want the feed to appear -->
+<div id="curator-feed-flickr-layout" class="tabcontent">
+
+<h1>My Flickr feed </h1>
+<a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+<script type="text/javascript">
+/* curator-feed-flickr-layout */
+(function(){
+var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+i.src = "https://cdn.curator.io/published/d9a3c118-7943-4c52-82d4-df64005ed121.js";
+e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+})();
+</script>
 
 <script>
 function openPage(pageName,elmnt,color) {
