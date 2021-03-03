@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: psycho649.github.io
+Token: 9b0159df5e0a02753c8d5dacf83bb3b8c8a834bbe346e7e0192fa95989966849
